@@ -1,0 +1,347 @@
+html {
+  font-size: 62.5%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/*global*/
+
+h1 {
+  font-size: 3.8rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.encabezado {
+  background-color: #0a6634;
+}
+
+.contenido-encabezado {
+  display: flex;
+  justify-content: start;
+  margin-left: 35px;
+ 
+}
+
+
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem; /*18px*/
+  margin: 2rem;
+}
+
+.navegacion a:hover {
+  color: #043a14;
+}
+
+.centrar-texto {
+  margin: 20px, 0px, 2px;
+  text-align: center;
+}
+
+.items-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  text-align: center;
+  margin: 10rem;
+  text-transform: capitalize;
+}
+
+.item h3 {
+  color: #0a6634;
+}
+
+.contenedor {
+  height: 100%;
+}
+
+.contenedor-conctactanos {
+  width: 100%;
+}
+
+.contenido-conctactanos {
+  display: flex;
+  justify-content: center;
+}
+
+.item-conctactanos {
+  position: relative; /*TIENE RELACION CON CONCTACTANOS-TEXT*/
+  overflow: hidden; /*ESCONDER CONCTACTANOS-TEXT*/
+}
+
+.conctactanos-text {
+  position: absolute; /*TIENE QUE VER CON ITEM-CONCTACTANOS*/
+  bottom: 0;
+  padding: 2rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  transform: translateY(95%); /*MOVER VERTICAL*/
+  transition: all 0.5s ease-out; /*DINAMICO,SUBE EL TEXTO*/
+}
+
+.conctactanos-text a {
+  color: white;
+  text-decoration: none;
+  font-size: 3.4rem;
+}
+
+.item-conctactanos :hover.conctactanos-text {
+  transform: translateY(
+    0%
+  ); /*DA MOVIMIENTO A CONCTACTANOS-TEXT CON RELACION A ITEM-CONCTACTANOS*/
+}
+
+.img-wallpaper {
+  width: 100%;
+  height: 60vh;
+  margin: 1rem 0;
+  display: block;
+}
+
+.solicit-cita-aqui {
+  background-color: #e3f4e8;
+  height: 100%;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+.solicit-cita-aqui a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 3rem;
+}
+
+.contenedor-pagina {
+  height: 100vh;
+}
+
+.footer-reseña {
+  width: 100%;
+  margin-top: 3rem;
+  color: #171414;
+  text-align: center;
+}
+
+.contenido-reseña {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-weight: 550;
+}
+
+/*FORMULARIO SOLICITACANCELA*/
+
+.contenedor {
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+}
+
+.form-tittle {
+  color: white;
+}
+
+.form-tittlef {
+  color: green;
+  font-size: 2rem;
+}
+
+.form-tittle span {
+  color: #e2eec7;
+}
+
+.contenedor form {
+  background: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 503px;
+  margin: auto;
+  padding: 5px, 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  margin-top: 6rem;
+}
+
+.contenedorf form {
+  background: #FDF9F9;
+  width: 90%;
+  max-width: 503px;
+  margin: auto;
+  padding: 5px, 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.form-label {
+  display: block; /*uno abajo del otro*/
+  color: white;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.form-labelf {
+  display: block; /*uno abajo del otro*/
+  color: black;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.form-input {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #0a6634;
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.form-inputf {
+  background: rgba(165, 218, 165, 0.2);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #0a6634;
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.form-select {
+  background: #e8efe6;
+}
+
+.form-submit {
+  background: #0a6634;
+  border: none;
+  outline: none;
+  height: 3rem;
+  margin: 3px;
+  border-radius: 3px;
+  padding: 15px, 0;
+  color: white;
+  cursor: pointer;
+}
+
+.form-submitf {
+  background: #0a6634;
+  border: none;
+  outline: none;
+  height: 3rem;
+  margin: 3px;
+  border-radius: 6px;
+  padding: 15px, 0;
+  color: white;
+  cursor: pointer;
+  margin-left: 221px;
+}
+
+.contenedor .form-submit:hover {
+  color: #0f3609;
+}
+
+.contenedorf .form-submitf:hover {
+  color: #0f3609;
+  align-items: center;
+}
+
+/*ESTILOS PARA DISPONIBILIDAD DE CITA*/
+
+.opciones-asignar-cancela{
+ /*border: 1px solid black;*/
+  background-color:  #F5F7F4;
+  padding: 10px;
+  margin-bottom: 10px;
+ 
+}
+
+.Selecciona{
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+.Selecciona button{
+  font-weight: 700;
+  text-transform: capitalize;
+  outline: none;
+  transition: all 400ms;
+}
+
+.activo{
+  background-color: hsla( 0.25turn , 100% , 50% , 0.2 );
+  transform: translateY(5px);
+  border-radius: 7px;
+}
+
+
+
+.Estilos-opciones{
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  color: #171414;
+}
+
+.Tipo-cita{
+  width: 20%;
+  margin-left: 10px;
+  padding: 10px;
+}
+button{
+  background-color: #EDF9EB;
+  margin-top: 2px;
+
+
+}
+
+.contenedor-citas-disponibles{
+  margin: 3px;
+  padding: 3px;
+  visibility: hidden;
+ 
+}
+
+.contenedor-citas-disponibles button{
+  background-color: #8dbe27;
+  text-transform: uppercase;
+  padding: 3px;
+  margin-left: 8px;
+  border-radius: 5px ;
+}
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Solicita</title>
+
+    <style>
+      body {
+        background: url(../citastdea/img/fondotdea.jpg);
+        background-size: cover; /*acoplarse a la pantalla*/
+        background-attachment: fixed; /*acoplarse a la pantalla*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contenedor-pagina">
+      <header class="encabezado">
+        <div class="contenido-encabezado">
+          <a href="index.html"
+            ><img src="img/logo.png" alt="logo" width="100rem" height="90rem"
+          /></a>
+          <nav class="navegacion">
+          </nav>
+        </div>
+      </header>
+
+      <div class="contenedor">
+        <form class="formularios" action="#" class="form">
+          <div class="form-header">
+              <h1 class="form-tittle">Citas TdeA</h1>
+            </div>
+            <label class="form-label"  for="nombre" >Usuario</label>
+            <input class="form-input" type="text" id="usuario" required> 
+            <label   class="form-label" for="password">Contraseña</label>
+            <input  class="form-input" type="password" id="contraseña" required>
+            <button class="form-submit" type="button" id="Ingresar">Enviar</button>   
+            <input  class="form-submit" type="reset" name="f" id="ef"> 
+          </form>
+          </div>
+
+         <script src="./scripts/login.js"></script>
+  
+  </body>
+</html>

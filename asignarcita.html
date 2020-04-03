@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link
+          href="https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="shortcut icon" href="img/logo.png" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Asigna-Cancela</title>
+      </head>
+<body>
+    <div class="contenedor-pagina">
+        <header class="encabezado">
+          <div style="justify-content: space-around;" class="contenido-encabezado">
+            <a  href="index.html"
+              ><img class="logo" src="img/logo.png" alt="logo" width="100rem" height="90rem"
+            /></a>
+            <nav class="navegacion">
+              <a href="Conctáctanos"></a>
+              <nav class="navegacion">
+                <a href="formularioconctactanos.html">Conctáctenos</a>
+              </nav>
+          </div>
+        </header>
+
+     
+           
+        <section class="opciones-asignar-cancela">
+         <div class="contenido-selecciona">
+        <nav class="Selecciona">
+            <button  class="Estilos-opciones" id="Asignar"  type="button" >Asignar</button>
+            <button  class="Estilos-opciones" id="Cancelar"  type="button" >Cancelar</button>
+        </nav>
+    </div>
+    </section>
+
+
+    <div class="Contenido-asignar ocultar">
+    <form class="Tipo-cita" action="#">
+            <label for="Tipo-cita">Servicio:</label>
+            <select name="Tipo.cita" id="Tipo-cita">
+                <option id="Seleccionarc"  value="Selecionar">******Selecionar******</option>
+                <option id="Medicina" value="Medicina General">Consulta Medicina General</option>
+                <option id="Odontologica" value="Odontologica">Consulta Odontologica</option>
+                <option id="Psicologica" value="Psicologica">Consulta Psicologica</option>
+            </select><br>
+            <label for="Profesional">Profesional:</label>
+            <select name="Profesional" id="Profesional">
+              <option id="Seleccionar"  value="Selecionar">******Selecionar******</option>
+              <option id=Nombre1 value="Nombre1">Maria stella Gomez Osorio</option>
+              <option id="Nombre2" value="Nombre2">Olga Cecilia Suarez</option>
+              <option id="Nombre3" value="Nombre3">Estefania Henao Velasquez</option>
+          </select><br>
+            <button id="Disponibilidad" type="button">Consultar Disponibilidad de Citas</button>
+       
+    </form>
+
+     <!--VENTANA POPUP--->
+     <div id="contenedor_citas_disponibles" class="contenedor-citas-disponibles">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Hora (FORMATO 24 HORAS)</th>
+            <th scope="col">FECHA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">8:00</th>
+            <td>10/03/2020 <button type="button">Asignar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">10:00</th>
+            <td>10/03/2020 <button type="button">Asignar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">14:00</th>
+            <td>10/03/2020 <button type="button">Asignar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">18:00</th>
+            <td>20/03/2020 <button type="button">Asignar</button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+     </div>
+    </div>
+ 
+
+    <div class="Contenido-cancelar ocultar">
+      
+      <h1>esta seccion es para canca</h1>
+
+    </div>
+  
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="./scripts/Aaignarcancelar.js"></script>
+
+</body>
+</html>

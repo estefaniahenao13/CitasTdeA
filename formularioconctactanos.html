@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Formulario conctactanos</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <div  class="contenido-encabezado">
+        <a href="index.html"
+          ><img src="img/logo.png" alt="logo" width="100rem" height="90rem"
+        /></a>
+        <nav class="navegacion">
+          
+        </nav>
+      </div>
+    </header>
+
+    <div class="contenedorf">
+      <form action="#" class="form">
+        <div class="form-header">
+          <h1 class="form-tittlef">Formulario de Conctacto</h1>
+        </div>
+        <label class="form-labelf" for="asociacion"
+          >Tu comentario está asociado a?</label
+        >
+
+        <select
+          class="form-select"
+          name="asociaciones"
+          id="asociaciones"
+          required
+        >
+          <option value="--seleccionar--" selected>--seleccionar--</option>
+          <option value="FELICITACIONES">FELICITACIONES</option>
+          <option value="PETICION">PETICION</option>
+          <option value="QUEJA">QUEJA</option>
+          <option value="SUGERENCIA">SUGERENCIA</option>
+        </select>
+        <label class="form-labelf" for="causa"
+          >Dinos la causa de tu comentario</label
+        >
+        <textarea
+          name="causa"
+          id="causa"
+          placeholder="Escribe aquí tu causa"
+          maxlength="150"
+          cols="30"
+          rows="5"
+          required
+        ></textarea>
+        <label class="form-labelf" for="medio" required
+          >¿Por qué medio quieres que te demos la respuesta?</label
+        >
+        <select class="form-select" name="medio" id="medio" required>
+          <option value="--seleccionar--">--seleccionar--</option>
+          <option value="CORREO ELECTRONICO">CORREO ELECTRONICO</option>
+          <option value="LLAMADA TELEFONICA">LLAMADA TELEFONICA</option></select
+        >
+        <label class="form-labelf" for="identificacion" required
+          >¿Qué tipo de identificación tienes?</label
+        >
+        <select
+          class="form-select"
+          name="identificacion"
+          id="identidicacion"
+          required
+        >
+          <option value="--seleccionar--">--seleccionar--</option>
+          <option value="CEDULA">CEDULA</option>
+          <option value="TARJETA DE IDENTIDAD">TARJETA DE IDENTIDAD</option>
+          <option value="PASAPORTE">PASAPORTE</option>
+        </select>
+        <input
+          class="form-inputf"
+          type="text"
+          required
+          placeholder="No Identificación"
+        />
+        <label class="form-labelf" for="nombre" required
+          >¿Cómo te llamas?</label
+        >
+        <input
+          class="form-inputf"
+          type="text"
+          required
+          placeholder="Primer Nombre"
+        />
+        <input class="form-submitf" type="submit" id="Enviar" />
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-reseña">
+        <div class="icontec">
+        </div>
+       
+      </div>
+    </footer>
+  </body>
+</html>
